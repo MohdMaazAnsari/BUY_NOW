@@ -1,1 +1,1 @@
-# BUY_NOW
+clone of shop now
