@@ -53,7 +53,7 @@ catch(err) {
 
 
 useEffect(()=>{
-const url=`https://products-v7vr.onrender.com/products?_sort=price&_order=${order}`
+const url=`https://buy-now-backend.onrender.com/products?_sort=price&_order=${order}`
 
 
 
@@ -67,12 +67,12 @@ const url=`https://products-v7vr.onrender.com/products?_sort=price&_order=${orde
 
 // delete-----------------
 const handleDelete =async (id)=>{
-const url=`https://products-v7vr.onrender.com/products/${id}`
+const url=`https://buy-now-backend.onrender.com/products/${id}`
 
 
 let res= await axios.delete(url)
 
-const url2=`https://products-v7vr.onrender.com/products?_sort=price&_order=${order}`
+const url2=`https://buy-now-backend.onrender.com/products?_sort=price&_order=${order}`
 
 getData(url2)
 

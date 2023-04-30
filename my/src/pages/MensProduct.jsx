@@ -73,7 +73,7 @@ catch(err) {
 
 
 useEffect(()=>{
-const url=`https://products-v7vr.onrender.com/products?_sort=price&_order=${order}`
+const url=`https://buy-now-backend.onrender.com/products?_sort=price&_order=${order}`
 
   getData(url)  
   
@@ -92,10 +92,10 @@ const value=e.target.value
 
 let url;
 if(value===''){
-  url=`https://products-v7vr.onrender.com/products?_sort=price&_order=${order}`
+  url=`https://buy-now-backend.onrender.com/products?_sort=price&_order=${order}`
 }
 else{
-  url=`https://products-v7vr.onrender.com/products?desc=${value}`
+  url=`https://buy-now-backend.onrender.com/products?desc=${value}`
 }
 getData(url)
 
@@ -107,7 +107,7 @@ const handleChange=(e)=>{
   let url;
   const value=e.target.value
 
-    url=`https://products-v7vr.onrender.com/products?q=${value}`
+    url=`https://buy-now-backend.onrender.com/products?q=${value}`
   
   getData(url)
 

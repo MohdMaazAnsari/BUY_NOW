@@ -33,7 +33,7 @@ function Admin (){
 
 
     const Add_cat=async ()=>{
-      const url=`https://products-v7vr.onrender.com/products?`
+      const url=`https://buy-now-backend.onrender.com/products?`
       let res=await axios.post(url,input_data);
       setUpdated(!updated)
       
